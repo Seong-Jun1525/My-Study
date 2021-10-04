@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Responsive Website Design Start To Finish</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Nature</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                            <span class="sr-only">(current)</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#explore">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#adventure">Adventure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="jumbotron jumbotron-fluid height100p banner" id="home">
+        <div class="container h100">
+            <div class="contentBox h100">
+                <div>
+                    <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Undiscovered Beauty</h1>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="sec1" id="explore">
+        <div class="container">
+            <div class="row">
+                <div class="offset-sm-2 col-sm-8">
+                    <div class="headerText text-center">
+                        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Explore The World</h2>
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                        <div class="imgBx">
+                            <img class="img-fluid" src="img/japan.jpg" alt="japan">
+                        </div>
+                        <div class="content">
+                            <h3>Place Name<br /><span>Country Name</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="imgBx">
+                            <img class="img-fluid" src="img/korea.jpg" alt="korea">
+                        </div>
+                        <div class="content">
+                            <h3>Place Name<br /><span>Country Name</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                        <div class="imgBx">
+                            <img class="img-fluid" src="img/china.jpg" alt="china">
+                        </div>
+                        <div class="content">
+                            <h3>Place Name<br /><span>Country Name</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec2" id="adventure">
+        <div class="container h100">
+            <div class="contentBox h100">
+                <div>
+                    <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Adventure is Everywhere</h1>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <a href="#" class="btn btnD1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="offset-sm-2 col-sm-8">
+                    <div class="headerText text-center">
+                        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Our Latest Post</h2>
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="blogpost" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                        <div class="imgBx">
+                            <img class="img-fluid" src="img/japan.jpg" alt="japan">
+                        </div>
+                        <div class="content">
+                            <h1>
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam ...
+                            </p>
+                            <a href="#" class="btn btnD2">Read More</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="blogpost">
+                        <div class="imgBx">
+                            <img class="img-fluid" src="img/korea.jpg" alt="korea">
+                        </div>
+                        <div class="content">
+                            <h1>
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam ...
+                            </p>
+                            <a href="#" class="btn btnD2">Read More</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blogpost" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                        <div class="imgBx">
+                            <img class="img-fluid" src="img/china.jpg" alt="china">
+                        </div>
+                        <div class="content">
+                            <h1>
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam ...
+                            </p>
+                            <a href="#" class="btn btnD2">Read More</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blogpost" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="imgBx">
+                            <img class="img-fluid" src="img/taiwan.jpg" alt="taiwan">
+                        </div>
+                        <div class="content">
+                            <h1>
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam ...
+                            </p>
+                            <a href="#" class="btn btnD2">Read More</a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="headerText text-center">
+                        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Contact Us</h2>
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="offset-sm-2 col-sm-8">
+                    <form action="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input type="text" name="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="text" name="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Phone</label>
+                            <input type="text" name="" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Message</label>
+                            <textarea class="form-control textarea" name="" id=""></textarea>    
+                        </div>
+                        <div class="form-group text-center">
+                            <button class="btn btnD1">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="sci">
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                    </ul>
+                    <p class="cpryt">
+                        &copy; Copyright 2021 Nature | Template by <a href="#">Online Tutorials</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
