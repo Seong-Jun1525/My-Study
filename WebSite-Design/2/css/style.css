@@ -37,7 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 header .logo {
@@ -45,7 +45,7 @@ header .logo {
     text-transform: uppercase;
     color: #333;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 header .logo span {
@@ -89,6 +89,10 @@ header ul li a:before {
 header ul li a:hover:before,
 header ul li a.active:before {
     width: 40px;
+}
+
+.menuIcon {
+    display: none;
 }
 
 .content {
@@ -190,7 +194,7 @@ header ul li a.active:before {
 
 .icons .sci li {
     list-style: none;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .icons .sci li i {
@@ -218,5 +222,107 @@ header ul li a.active:before {
 }
 
 @media (max-width: 992px) {
-    
+    .container {
+        padding: 20px 50px;
+    }
+
+    .container:before {
+        display: none;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    header ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        z-index: 10000;
+        padding: 100px 0;
+    }
+    header.active ul {
+        display: initial;
+    }
+
+    header ul li {
+        padding: 20px;
+        text-align: center;
+    }
+
+    header ul li a {
+        color: #333 !important;
+        font-size: 36px;
+    }
+
+    header ul li a:hover:before,
+    header ul li a.active:before {
+        width: 100%;
+    }
+
+    .menuIcon {
+        display: initial;
+        position: fixed;
+        right: 50px;
+        cursor: pointer;
+        padding: 8px;
+        z-index: 100000;
+        background: #fff url(../img/menu.png);
+        width: 34px;
+        height: 34px;
+        background-repeat: no-repeat;
+        background-position: 6px;
+    }
+
+    header.active .menuIcon {
+        background: #fff url(../img/close.png);
+        background-repeat: no-repeat;
+        background-position: 6px;
+    }
+
+    .icons .controls li {
+        filter: invert(0);
+    }
+
+    .content {
+        margin-top: 0;
+        flex-direction: column-reverse;
+    }
+
+    .content .bannerText {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .content .bannerText h2 {
+        font-size: 20px;
+    }
+
+    .content .bannerImg {
+        width: 100%;
+        height: 40vh;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 20px 20px;
+    }
+
+    .menuIcon {
+        right: 10px;
+    }
+
+    .icons .controls li {
+        height: 40px;
+    }
+
+    .icons .controls li img {
+        max-width: 40px;
+    }
 }

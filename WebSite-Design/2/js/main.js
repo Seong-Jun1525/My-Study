@@ -27,3 +27,8 @@ function prevSlideText() {
     i = (i - 1 + slidesText.length) % slidesText.length
     slidesText[i].classList.add('active')
 }
+
+function menuToggle() {
+    var nav = document.getElementById('navbar')
+    nav.classList.toggle('active')
+}
