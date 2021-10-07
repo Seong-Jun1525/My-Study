@@ -183,7 +183,7 @@ header #toggle:after {
     color: #fff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 860px) {
     header {
         padding: 20px 50px;
     }
