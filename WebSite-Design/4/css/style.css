@@ -4,7 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
     font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .banner {
@@ -77,10 +82,10 @@
     position: relative;
     width: 100%;
     display: flex;
+    background: #162c3b;
 }
 
 .about .contentBx {
-    background: #162c3b;
     padding: 100px;
     width: 50%;
 }
@@ -130,6 +135,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .services .container .serviceBx img {
