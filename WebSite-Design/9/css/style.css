@@ -213,3 +213,45 @@ header .logo {
     text-decoration: none;
     font-size: 2em;
 }
+
+@media (max-width: 991px) {
+    header {
+        padding: 20px 40px;
+    }
+    
+    .banner {
+        padding: 40px;
+        overflow: hidden;
+    }
+
+    .banner::before {
+        top: 100px;
+        left: 0;
+        width: 170px;
+        height: 310px;
+    }
+
+    .banner::after {
+        bottom: 0;
+        right: 0;
+        width: 80px;
+        height: 60px;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .content .contentBx {
+        max-width: 100%;
+    }
+
+    .content .imgBx img {
+        min-width: 300px;
+    }
+
+    .content .contentBx h2 {
+        font-size: 2.5em;
+    }
+}
