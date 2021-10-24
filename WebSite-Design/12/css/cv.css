@@ -8,11 +8,19 @@
 }
 
 body {
-    background: lightblue;
+    background: #f5f5f5;
+    /* background: lightblue; */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
+}
+
+.mainWebSite {
+    margin: 20px 0;
+    color: #111;
+    text-decoration: none;
 }
 
 .container {
