@@ -125,3 +125,64 @@ body {
     font-size: 24px;
     color: var(--black);
 }
+
+section {
+    position: relative;
+    min-height: 100vh;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.banner .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .imgBx {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.banner .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h3 {
+    position: relative;
+    font-size: 1.4em;
+    color: var(--black);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+p {
+    color: #777;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background: var(--black2);
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    text-decoration: none;
+}
