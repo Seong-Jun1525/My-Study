@@ -267,3 +267,39 @@ p {
 .about .content .imgBx img {
     max-width: 100%;
 }
+
+.services .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 40px 0;
+}
+
+.services .content .serviceBox {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 50px 20px;
+    display: flex;
+    background: var(--white2);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services .content .serviceBox img {
+    max-width: 50px;
+}
+
+.services .content .serviceBox h2 {
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.services .content .serviceBox p {
+    text-align: center;
+}
