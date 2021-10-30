@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -477,4 +478,11 @@ p {
     text-transform: uppercase;
     max-width: 150px;
     border: none;
+}
+
+.copyright {
+    position: relative;
+    bottom: 0;
+    padding: 10px 40px;
+    text-align: center;
 }
