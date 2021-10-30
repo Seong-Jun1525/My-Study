@@ -9,3 +9,12 @@ toggle.onclick = function() {
     navigation.classList.toggle('active')
     main.classList.toggle('active')
 }
+
+// now, we fix menu active class issue for mobile devices
+function toggleMenu() {
+    let navigation = document.querySelector('.navigation')
+    let main = document.querySelector('.main')
+
+    navigation.classList.remove('active')
+    main.classList.remove('active')
+}

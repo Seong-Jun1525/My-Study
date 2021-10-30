@@ -34,7 +34,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: width 0.5s;
+    transition: width 0.5s, left 0.5s;
 }
 .navigation.active {
     width: 0;
@@ -485,4 +485,95 @@ p {
     bottom: 0;
     padding: 10px 40px;
     text-align: center;
+}
+
+@media (max-width: 992px) {
+    .navigation {
+        left: -100%;
+    }
+    .navigation.active {
+        left: 0;
+        width: 100%;
+    }
+
+    .navigation ul {
+        padding: 20px 20px;
+    }
+
+    .main {
+        width: 100%;
+        left: 0;
+    }
+    .main.active {
+        left: 100%;
+    }
+
+    .main .topbar {
+        width: 100%;
+        left: 0;
+        padding: 0 20px;
+    }
+
+    .banner .imgBx {
+        width: 250px;
+        height: 250px;
+    }
+
+    .banner h3,
+    .banner p {
+        text-align: center;
+    }
+
+    .adjust {
+        padding: 0 20px;
+        padding-top: 80px;
+    }
+
+    .about .content {
+        flex-direction: column;
+    }
+
+    .about .content .textBox {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .about .content .imgBx {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .services .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .services .content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project .content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .testimonials .content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact {
+        margin-bottom: 100px;
+    }
+
+    .contact .contactForm .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .copyright {
+        padding: 10px 20px;
+    }
 }
